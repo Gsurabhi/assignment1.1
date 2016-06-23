@@ -9,11 +9,11 @@ git 'https://github.com/BitwiseInc/assignment1.1.git'
 //2
 stage 'Clean'
 node{
-  sh 'chmod +x gradlew'
-  sh './gradlew clean --info' 
+  //sh 'chmod +x gradlew'
+  sh 'gradle clean --info' 
 }
 
 stage 'Unit Test'
 node{
-  sh './gradlew test --info' 
+  sh 'gradle test --info' 
 }
